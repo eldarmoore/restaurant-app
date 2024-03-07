@@ -6,7 +6,7 @@
             @include('management.inc.sidebar')
             <div class="col-md-8">
                 <i class="fas fa-hamburger"></i> Menu
-                <a class="btn btn-success btn-sm float-right" href="/management/category/create"><i class="fas fa-plus"></i> Create Menu</a>
+                <a class="btn btn-success btn-sm float-right" href="/management/menu/create"><i class="fas fa-plus"></i> Create Menu</a>
                 <hr>
                 @if(session()->has('status'))
                     <div class="alert alert-success">
