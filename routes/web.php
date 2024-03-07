@@ -18,3 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/management', function () {
+    return view('management.index');
+});
+
+Route::get('/cashier', function () {
+    return 'This is Cashier Page.';
+});
+
+Route::get('/report', function () {
+    return 'This is Report Page.';
+});
+
+Route::resource('management/category', 'Management\CategoryController');
