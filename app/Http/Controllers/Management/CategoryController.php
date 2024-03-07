@@ -16,7 +16,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('management.category');
+        $categories = Category::paginate(10);
+        return view('management.category')->with('categories', $categories);
     }
 
     /**
