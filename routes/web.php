@@ -31,6 +31,8 @@ Route::get('/report', function () {
     return 'This is Report Page.';
 });
 
+Route::get('/cashier/getTable', 'Cashier\CashierController@getTables');
+
 Route::resource('management/category', 'Management\CategoryController');
 Route::resource('management/menu', 'Management\MenuController');
 Route::resource('management/table', 'Management\TableController');
